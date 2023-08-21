@@ -2,10 +2,11 @@
 const playButton = document.getElementById("play-button");
 
 //* PRENDIAMO IL DIV CHE CONTERRA' LA GRIGLIA TRAMITE ID
-const grid = document.getElementById("grid");
+let grid = document.getElementById("grid");
 
 //* AL CLICK GENERA LA GRIGLIA
 playButton.addEventListener("click", function () {
+  grid.innerHTML = "";
   generateGrid();
 });
 
